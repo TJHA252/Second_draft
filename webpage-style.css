@@ -1,0 +1,234 @@
+/* ---> HTML and Body style <--- */
+html {
+    /* height: 100%; */
+    margin: 0%;
+    padding: 0%;
+    overflow: auto;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    overflow: auto;
+}
+
+h1, h2, h3{
+    text-align: center;
+}
+
+
+/* ---> Styling Navigation <--- */
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;  
+}
+
+li {
+    display: inline;
+}
+
+li a{
+    float: right;
+    text-align: right;
+    display: block;
+    color: black;
+    text-align:center;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #f66;
+}
+
+.menu_link{
+    height: 100%;
+    width: 20%;
+    align-items: center;
+}
+
+.menu_link_text{
+    margin-top: 15%;
+    margin-bottom:0;
+}
+
+#navigation{
+    position: -webkit-sticky; /*Safari*/
+    position:sticky;
+    top: 0;
+    height: 8%;
+    background-color:#f3f5fc;
+    -webkit-box-shadow: 5px 5px 5px rgb(145, 145, 145);
+    -moz-box-shadow:    5px 5px 5px rgb(145, 145, 145);
+    box-shadow:         5px 5px 5px rgb(145, 145, 145);
+    z-index: 1234;
+    
+}
+
+#menu{
+    z-index:999;
+    width: 69.5%;
+    display: inline-block;
+}
+
+#logo_title{
+    float: left;
+    text-align: right;
+    padding-left: 11%;
+}
+
+#logo_image{
+    height: 100%;
+    width: auto;
+    margin: 0;
+    padding: 0%;
+}
+
+#logo{
+    width: 30%; 
+    display: inline-block;
+}
+
+
+/* ---> Column div styling <---*/
+
+
+.body-text-p{
+    text-align: left;
+    padding:1.5%;
+}
+
+#left_column{
+    background-color:#f1f6fd; 
+}
+
+#right_column{
+    background-color:#fffffd; 
+    float:right;
+    height: auto;
+    width: 100%;
+}
+
+#sticky_image_div{
+    overflow: hidden;
+    position: -webkit-sticky; 
+    position:sticky; 
+    top: 8%; 
+    float:left;
+    height: 100%;
+    width: 48%;
+    z-index: -1;
+}
+
+#column_image{
+    margin-left: 7%;
+    height: 92%;
+
+}
+
+#container_div{
+    overflow: hidden;
+}
+
+
+/* ---> Gallery Styling <--- */
+
+
+#gallery_overall{
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+}
+
+#gallery_div{
+    width: 70%;
+    z-index: 1;
+    overflow: hidden;
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#gallery_headliner{
+    width: 100%;
+    background-color: white;
+    height: 20%;
+    padding-top: 5%;
+}
+
+.gallery_row{
+    padding:0.5%;
+    height: 30%;
+    overflow: hidden;
+}
+/* The grid: Four equal columns that floats next to each other */
+.gallery_column {
+    float: left;
+    width: 25%;
+}
+  
+/* Style the images inside the grid */
+.gallery_column img {
+    width: 99%;
+    height: 99%;
+    opacity: 0.8;
+    cursor: pointer;
+    margin: 1%;
+    object-fit: cover;
+}
+
+.gallery_column img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.gallery_row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+#gallery_container {
+    position: relative;
+    display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Closable button inside the image */
+#close_img_btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+/* footer styling */
+#footer{
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    height: 20%;
+    padding-top: 5%;
+}
+
+#footer_text{
+    text-align: center;
+    font-size: 150%;
+    color: black;
+}
