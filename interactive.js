@@ -8,3 +8,36 @@ function openScaled(imgs) {
     expandImg.parentElement.style.display = "block";
     console.log("clicked on image")
 }
+
+
+
+
+
+
+
+function search_transcript(){
+    console.log("buttonPress") 
+    let input = document.getElementById('search_text').value
+    input=input.toLowerCase();
+    let pArray = document.getElementsByClassName('body-text-p');
+    let resultsParagraph = document.getElementById("search_results");
+    resultsParagraph.innerHTML = ""
+  
+    for (i = 0; i < pArray.length; i++) { 
+      console.log("going through a paragraph ", i);
+      if (pArray[i].innerText.toLowerCase().includes(input)){
+        pArray[i].style.backgroundColor = "#ccc";    
+        console.log("found in paragraph ", i);
+        let tempParagraph = document.createElement("p");
+        tempParagraph.className = "response_paragraph";
+        resultsParagraph.appendChild(tempParagraph);
+        let tempLink = document.createElement("a");
+        tempLink.className = "response_link";
+        tempParagraph.appendChild(tempLink);
+        tempLink.innerText = "found in paragraph "+(i+1);   
+        pArray[i].id = "paragraph" + i; 
+        tempLink.href = "#" + pArray[i].id;
+      }
+      resultsParagraph.style.display = "inline-block";
+    } 
+  }
