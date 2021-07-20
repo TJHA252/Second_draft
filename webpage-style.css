@@ -56,9 +56,9 @@ li a:hover {
     margin-bottom:0;
 }
 
-#navigation{
+.navigation{
     position: -webkit-sticky; /*Safari*/
-    position:sticky;
+    position: sticky;
     top: 0;
     height: 8%;
     background-color:#f3f5fc;
@@ -110,7 +110,7 @@ li a:hover {
     background-color:#fffffd; 
     float:right;
     height: auto;
-    width: 100%;
+    width: auto;
 }
 
 #sticky_image_div{
@@ -119,8 +119,8 @@ li a:hover {
     position:sticky; 
     top: 8%; 
     float:left;
-    height: 100%;
-    width: 48%;
+    height: auto;
+    width: 50%;
     z-index: -1;
 }
 
@@ -295,13 +295,56 @@ li a:hover {
   }
 
   .response_link{
-
+    font-size: 45%;
   }
-  
-  
-  
-  
-  
-  
+
+
+.img-1, .img-2, .img-3 {
+    position: relative;
+    background-attachment: fixed;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 55%;
+
+}
+.img-1 {
+  background-image: url("https://media.gettyimages.com/photos/humpback-whale-portrait-picture-id1082038432?s=2048x2048");
+  min-height: 100%;
+ 
+}
+
+.img-2 {
+  background-image: url("https://media.gettyimages.com/photos/aerial-view-of-whales-swimming-among-icebergs-picture-id1167105050?s=2048x2048");
+  min-height: 100%;
+}
+
+.img-3 {
+  background-image: url("https://media.gettyimages.com/photos/close-up-rear-view-of-a-sperm-whale-showing-detail-in-the-tail-fluke-picture-id1062039312?s=2048x2048");
+  min-height: 100%;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
   
   
